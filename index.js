@@ -17,7 +17,7 @@ function submitData(userName, userEmail){
       return response.json();
     })
     .then(function(object){
-      console.log(object);
+      document.body.innerHTML = object["id"];
     })
   )
 }
