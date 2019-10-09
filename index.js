@@ -13,5 +13,11 @@ function submitData(userName, userEmail){
         email: userEmail
       })
     })
+    .then(function(response){
+      return response.json();
+    })
+    .then(function(object){
+      console.log(object);
+    })
   )
 }
